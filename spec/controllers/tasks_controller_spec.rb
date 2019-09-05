@@ -16,6 +16,7 @@ RSpec.describe TasksController, type: :controller do
       expect(response_ids).to eq([task1.id, task2.id])
     end
   end
+  
   describe "task#update" do
     it "should allow tasks to be marked as done" do
       task = FactoryBot.create(:task, done: false)
